@@ -38,6 +38,10 @@ export default function Home() {
             </div>
             <div className="dale"><BsArrowRight className='icc'/></div>
         </div>
+
+        <div className="header">
+          .
+        </div>
       </div>
     </div>
   )
