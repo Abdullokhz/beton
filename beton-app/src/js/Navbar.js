@@ -10,8 +10,8 @@ import {AiOutlineMenu} from 'react-icons/ai'
 import {FaRegHandshake} from 'react-icons/fa'
 import logo1 from '../img/logo.jpeg'
 import logo2 from '../img/phone.jpeg'
+import {MdOutlineManageAccounts} from 'react-icons/md'
 import {FaBars, FaTimes} from 'react-icons/fa'
-
 
 function bosh() {
   window.location="/Home"
@@ -33,7 +33,7 @@ export default function Navbar() {
           <img src={logo1} onClick={()=> bosh()} className='logo1' />
         </div>
         <div className="nav-links">
-          <nav >
+          <nav>
             <a href="#" ><HiOutlineNewspaper className='ico'/>Новости</a>
             <a href="#" ><BsFillCalculatorFill className='ic'/>Калькуляторы</a>
             <a href="#" ><FaRegHandshake className='ico'/>Партнеры</a>
@@ -50,7 +50,10 @@ export default function Navbar() {
         </div>
         <div className="nav-logo2">
             <img src={logo2} className='logo2' alt="" />
-            <AiOutlineMenu className='bx-x' id='menu-bars'/>
+            <div className="nav-ic">
+              <MdOutlineManageAccounts className='acount' id='acount'/>
+              <AiOutlineMenu className='bx-x' id='menu-bars'/>
+            </div>
         </div>
         </div>
         

@@ -141,8 +141,49 @@
     display: none;
 }
 
+#acount {
+    display: none;
+}
+
 
 /* media css */
+@media(max-width:1027px) {
+    .nav-links a {
+        display: none;
+    }
+
+    .logo1 {
+        width: 150px;
+    }
+
+    #menu-bars {
+        display: flex;
+        margin-left: 10px;
+        font-size: 25px;
+    }
+
+    #acount {
+        display: flex;
+        font-size: 25px;
+    }
+
+    .nav-ic {
+        display: flex;
+    }
+
+    .nav-2 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .nav-bot-link {
+        display: none;
+    }
+}
 
 @media(max-width: 768px) {
 
