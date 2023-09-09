@@ -8,6 +8,11 @@ import ap from '../img/appstore.jpeg'
 import ge from '../img/getapps.jpeg'
 import go from '../img/googleplay.jpeg'
 import ru from '../img/rustore.jpeg'
+import bet from '../img/betoni.jpeg'
+import qum from '../img/qum.jpeg'
+import cem from '../img/cement.jpeg'
+import zakazz from '../img/zakazz.jpeg'
+import {BsArrowLeft} from 'react-icons/bs'
 import {BsArrowRight} from 'react-icons/bs'
 
 export default function Home() {
@@ -40,7 +45,47 @@ export default function Home() {
         </div>
 
         <div className="header">
-          .
+          <div className="zakaz">
+            <div className="z-h1">
+              <h1 className='z-h01'><img src={zakazz} alt="" />Заказ бетона</h1>
+            </div>
+
+            <div className="k-zakaz">
+              <p className='k-p'>Что необходимо?</p>
+              
+              <div className="big-z">
+              <div className="min-z">
+                <img src={bet} alt="" />
+                <p>Бетон</p>
+              </div>
+
+              <div className="min-z">
+                <img src={cem} alt="" />
+                <p>Пескобетон</p>
+              </div>
+
+              <div className="min-z">
+                <img src={qum} alt="" />
+                <p>Строительный <br/>раствор</p>
+              </div>
+
+              <div className="min-z1">
+                <h1>Специальный бетон</h1>
+                <p>Отправим ваш запрос <br />на все заводы</p>
+              </div>
+              </div>
+
+              <div className="z-rage">
+                <div className="k-rage"></div>
+              </div>
+
+              <div className="z-btns">
+                <button className='z-btn1'><a href="#"><BsArrowLeft className='b-i1'/>Назад</a></button>
+                <button className='z-btn2'><a href="#">Далее<BsArrowRight className='b-i2'/></a></button>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>

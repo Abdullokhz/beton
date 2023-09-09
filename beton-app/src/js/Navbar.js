@@ -10,14 +10,8 @@ import {AiOutlineMenu} from 'react-icons/ai'
 import {FaRegHandshake} from 'react-icons/fa'
 import logo1 from '../img/logo.jpeg'
 import logo2 from '../img/phone.jpeg'
+import {FaBars, FaTimes} from 'react-icons/fa'
 
-let menu = document.querySelector('#menu-bars');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () => {
-    menu.classList.toggle('.bx-x');
-    navbar.classList.toggle('active');
-}
 
 function bosh() {
   window.location="/Home"
@@ -25,6 +19,12 @@ function bosh() {
 
 
 export default function Navbar() {
+  // const navRef = useRef();
+
+  // const showNavbar = () => {
+  //   navRef.current.classList.toggle("responsive_nav");
+  // }
+
   return (
     <div>
        <div className="navbar">
@@ -33,11 +33,20 @@ export default function Navbar() {
           <img src={logo1} onClick={()=> bosh()} className='logo1' />
         </div>
         <div className="nav-links">
-            <h4><a href="#" ><HiOutlineNewspaper className='ico'/>Новости</a></h4>
-            <h4><a href="#" ><BsFillCalculatorFill className='ic'/>Калькуляторы</a></h4>
-            <h4><a href="#" ><FaRegHandshake className='ico'/>Партнеры</a></h4>
-            <h4><a href="#" ><RiFileEditLine className='ic'/>Стать партнером</a></h4>
-            <h4><a href="#" ><ImPriceTags className='ic'/>Программа лояльности</a></h4>
+          <nav >
+            <a href="#" ><HiOutlineNewspaper className='ico'/>Новости</a>
+            <a href="#" ><BsFillCalculatorFill className='ic'/>Калькуляторы</a>
+            <a href="#" ><FaRegHandshake className='ico'/>Партнеры</a>
+            <a href="#" ><RiFileEditLine className='ic'/>Стать партнером</a>
+            <a href="#" ><ImPriceTags className='ic'/>Программа лояльности</a>
+            {/* <button className='nav-btn nav-close-btn' onClick={showNavbar}>
+              <FaTimes/>
+            </button> */}
+          </nav>
+          {/* <button className='nav-btn' onClick={showNavbar}> */}
+            {/* <FaBars/>
+          </button> */}
+
         </div>
         <div className="nav-logo2">
             <img src={logo2} className='logo2' alt="" />
@@ -48,8 +57,8 @@ export default function Navbar() {
         <div className="nav-bot-link">
           <h4>Гарантия</h4>
           <h4>Оставить претензию</h4>
-          <button className='nav-btn'><BsFillTelephoneFill className='ic1'/>Перезвоните мне</button>
-          <button className='nav-btn2'><BsFillPeopleFill className='ic1'/>Личный кабинет</button>
+          <button className='nav-btni'><BsFillTelephoneFill className='ic1'/>Перезвоните мне</button>
+          <button className='nav-btni2'><BsFillPeopleFill className='ic1'/>Личный кабинет</button>
         </div>
        </div>
     </div>

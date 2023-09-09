@@ -69,7 +69,7 @@
 .logo2 {
    position: absolute;
    top: 0;
-   right: 3rem;
+   right: 7.5rem;
 }
 
 .logo1 {
@@ -77,7 +77,7 @@
     cursor: pointer;
 }
 
-.nav-btn {
+.nav-btni {
     border: none;
     width: 202px;
     height: 36px;
@@ -93,7 +93,7 @@
     cursor: pointer;
 }
 
-.nav-btn2 {
+.nav-btni2 {
     border: none;
     width: 202px;
     height: 36px;
@@ -110,11 +110,11 @@
     margin-left: 10px;
 }
 
-.nav-btn .ic1 {
+.nav-btni .ic1 {
     margin-right: 5px;
 } 
 
-.nav-btn2 .ic1 {
+.nav-btni2 .ic1 {
     margin-right: 5px;
     align-items: center;
 } 
