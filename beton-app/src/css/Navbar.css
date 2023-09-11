@@ -148,8 +148,32 @@
 
 /* media css */
 @media(max-width:1027px) {
-    .nav-links a {
-        display: none;
+    .navbar {
+        width: 100%;
+    }
+    .nav-links {
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        right: -600px;
+        background: #EAEAEA;
+        transition: .5s;
+    }
+
+    nav a{
+        display: block;
+        font-size: 25px;
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        margin-bottom: 5px;
+        background: #fff;
+        transition: .3s;
+    }
+    
+    nav a:hover {
+        color: #fff;
+        background: #FFCB13;
     }
 
     .logo1 {

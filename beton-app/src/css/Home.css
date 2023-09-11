@@ -446,3 +446,22 @@
         width: 298px;
     }
 }
+
+@media(max-width:775px) {
+    .container {
+        overflow-x: hidden;
+    }
+
+    .baner {
+        width: 95%;
+    }
+    .big-z {
+        display: block;
+        flex-wrap: wrap;
+    }
+
+    .min-z1 {
+        width: 90%;
+        height: 30px;
+    }
+}

@@ -17,6 +17,11 @@ function bosh() {
   window.location="/Home"
 }
 
+function menu() {
+  document.querySelector('.nav-links').style = 'position: absolute; right: 0; top: 0;'
+  document.querySelector('nav a').style = 'display:block;'
+}
+
 
 export default function Navbar() {
   // const navRef = useRef();
@@ -52,7 +57,7 @@ export default function Navbar() {
             <img src={logo2} className='logo2' alt="" />
             <div className="nav-ic">
               <MdOutlineManageAccounts className='acount' id='acount'/>
-              <AiOutlineMenu className='bx-x' id='menu-bars'/>
+              <AiOutlineMenu onClick={()=> menu()} className='bx-x' id='menu-bars'/>
             </div>
         </div>
         </div>
